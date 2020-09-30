@@ -4,43 +4,15 @@ import { Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/homepage/shop/shop.component.jsx';
 
-const HatsPage = () => (
-  <div>
-    <h1>HATS PAGE</h1>
-  </div>
-)
-const JacketsPage = () => (
-  <div>
-    <h1>Jackets PAGE</h1>
-  </div>
-)
-const SneakersPage = () => (
-  <div>
-    <h1>Sneakers PAGE</h1>
-  </div>
-)
-const WomensPage = () => (
-  <div>
-    <h1>Womens PAGE</h1>
-  </div>
-)
-const MensPage = () => (
-  <div>
-    <h1>Mens PAGE</h1>
-  </div>
-)
 
 function App() {
   return (
     <div>
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/hats' component={HatsPage} />
-        <Route path='/Jackets' component={JacketsPage} />
-        <Route path='/sneakers' component={SneakersPage} />
-        <Route path='/womens' component={WomensPage} />
-        <Route path='/mens' component={MensPage} />
+        <Route path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
